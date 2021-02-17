@@ -1,0 +1,5 @@
+package coom.microservice.repositories;
+
+public class WorkerRepository {
+
+}
