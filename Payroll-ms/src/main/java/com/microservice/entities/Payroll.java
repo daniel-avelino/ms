@@ -20,15 +20,25 @@ public class Payroll implements Serializable {
 	private String name;
 	private Double dailyIncome;
 	private Integer days;
-	
+
+	private Long workerId;
+
+	private Double total;
+
 	public Payroll() {
 	}
 
-	public Payroll(Long id, String name, Double dailyIncome, Integer days) {
+	public Payroll(Long id, String name, Double dailyIncome, Integer days, Long workerId) {
 		this.id = id;
 		this.name = name;
 		this.dailyIncome = dailyIncome;
 		this.days = days;
+		this.workerId = workerId;
+		this.total = this.days * this.getDailyIncome();
+	}
+
+	public Long getWorkerId() {
+		return this.workerId;
 	}
 
 	public Long getId() {
@@ -62,9 +72,9 @@ public class Payroll implements Serializable {
 	public void setDays(Integer days) {
 		this.days = days;
 	}
-	
+
 	public Double getTotal() {
-		return this.days*this.getDailyIncome();
+		return total;
 	}
 
 	@Override
@@ -97,7 +107,5 @@ public class Payroll implements Serializable {
 			return false;
 		return true;
 	}
-	
-	
 
 }

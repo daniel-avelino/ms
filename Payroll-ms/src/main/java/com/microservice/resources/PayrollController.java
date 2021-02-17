@@ -26,11 +26,15 @@ public class PayrollController {
 		return ResponseEntity.ok().body(services.findAll());
 	}
 
+	@GetMapping(path = "/{id}")
+	private ResponseEntity<Payroll> findById(@PathVariable long id) {
+		return ResponseEntity.ok().body(services.findById(id));
+	}
+
 	@PostMapping(path = "/{id}/{days}/{dailyIncome}")
 	private ResponseEntity<Payroll> insertPayment(@PathVariable int days, @PathVariable double dailyIncome,
 			@PathVariable Long id) {
-		Payroll payment = new Payroll(null, "Daniel Mock", dailyIncome, days);
-
+		services.newPayment(days, id);
 		return new ResponseEntity<Payroll>(HttpStatus.CREATED);
 	}
 

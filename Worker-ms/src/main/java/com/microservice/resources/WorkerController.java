@@ -28,6 +28,11 @@ public class WorkerController {
 		return ResponseEntity.ok().body(workerServices.findAll());
 	}
 
+	@GetMapping(path = "/{id}")
+	public ResponseEntity<Worker> findById(@PathVariable Long id) {
+		return ResponseEntity.ok().body(workerServices.findById(id));
+	}
+
 	@PostMapping
 	public ResponseEntity<Worker> insert(@RequestBody Worker worker) {
 		workerServices.insertWorker(worker);
