@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.microservice.entities.Worker;
 
 @Component
-@FeignClient(name = "worker-ms", url = "localhost:8001", path = "/workers")
+@FeignClient(name = "worker-ms", path = "/workers")
 public interface WorkerFeignClient {
 
-	@GetMapping(path="/{id}")
+	@GetMapping(path = "/{id}")
 	ResponseEntity<Worker> findById(@PathVariable Long id);
 
 }
