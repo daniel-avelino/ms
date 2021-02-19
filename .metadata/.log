@@ -4131,3 +4131,139 @@ Contains: Missing org.springframework.cloud:spring-cloud-starter-netflix-hystrix
 
 !ENTRY org.eclipse.jdt.ui 2 0 2021-02-18 19:34:13.954
 !MESSAGE The 'org.eclipse.jdt.ui.JavaAllCompletionProposalComputer' proposal computer from the 'org.eclipse.jdt.ui' plug-in did not complete normally. The extension took too long to return from the 'computeCompletionProposals()' operation.
+
+!ENTRY org.eclipse.ui 2 2 2021-02-18 19:42:48.805
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-18 20:15:40.874
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.iGHfXbOt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-18 20:15:40.878
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.iGHfXbOt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-18 20:15:40.881
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-18 20:15:40.882
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.iGHfXbOt => OK
+!SESSION 2021-02-19 16:21:09.125 -----------------------------------------------
+eclipse.buildId=4.7.2.202009020958-RELEASE
+java.version=14.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -keyring /Users/macos-daniel/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -keyring /Users/macos-daniel/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2021-02-19 16:22:02.949
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2021-02-19 16:22:05.535
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-02-19 16:22:05.535
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10bcbbce,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@27234b7c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:52.006
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:52.010
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@41185195[org.springframework.tooling.boot.ls:1.21.0.202009020949(id=658)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:52.019
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:52.264
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:57.902
+!MESSAGE Boot LS startup time from start to initialized: 5788ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:57.975
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.OlmxBDnhisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:57.978
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:57.980
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:57.985
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:57.992
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:57.994
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:57.996
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:57.997
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.OlmxBDnh => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:58.066
+!MESSAGE classpath=168 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:58.074
+!MESSAGE buffering callback sts4.classpath.OlmxBDnh User-ms false 168
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:58.076
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:58.096
+!MESSAGE classpath=136 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:58.107
+!MESSAGE buffering callback sts4.classpath.OlmxBDnh EurekaServer-ms false 136
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:58.113
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:58.136
+!MESSAGE classpath=147 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:58.144
+!MESSAGE buffering callback sts4.classpath.OlmxBDnh Payroll-ms false 147
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:58.147
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:58.153
+!MESSAGE classpath=139 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:58.159
+!MESSAGE buffering callback sts4.classpath.OlmxBDnh Worker-ms false 139
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:58.160
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:58.169
+!MESSAGE classpath=163 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:58.174
+!MESSAGE buffering callback sts4.classpath.OlmxBDnh ZuulGateway-ms false 163
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:58.175
+!MESSAGE executing callback sts4.classpath.OlmxBDnh 5 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-19 16:46:59.205
+!MESSAGE executing callback sts4.classpath.OlmxBDnh SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2021-02-19 16:47:59.791
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
