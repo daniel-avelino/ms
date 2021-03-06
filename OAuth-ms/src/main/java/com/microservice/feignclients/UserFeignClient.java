@@ -5,6 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.microservice.entities.User;
 
@@ -12,7 +13,7 @@ import com.microservice.entities.User;
 @FeignClient(name = "user-ms", path = "/users")
 public interface UserFeignClient {
 
-	@GetMapping(path = "/{email}")
-	ResponseEntity<User> findByEmail(@PathVariable String email);
+	@GetMapping(path = "/search")
+	ResponseEntity<User> findByEmail(@RequestParam String email);
 
 }

@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.microservice.entities.User;
@@ -27,8 +28,8 @@ public class UserResource {
 		return ResponseEntity.ok().body(service.findAll());
 	}
 
-	@GetMapping(path = "/{email}")
-	public ResponseEntity<User> findByEmail(@PathVariable String email) {
+	@GetMapping(path = "/search")
+	public ResponseEntity<User> findByEmail(@RequestParam String email) {
 		return ResponseEntity.ok().body(service.findByEMail(email));
 	}
 
